@@ -8,7 +8,7 @@
 
 ### 特性
 
-- 开机自动执行 F2FS 垃圾回收（GC）
+- 开机自动执行 Trim
 - 支持 cron 定时执行维护任务
 - 自动判断设备是否为 F2FS 分区，非 F2FS 自动退出
 - 自动挂载 `/data` 分区为 `background_gc=on`
@@ -27,7 +27,7 @@ This module is designed for Android devices using the **F2FS (Flash-Friendly Fil
 
 ### Features
 
-- Auto-run F2FS garbage collection on boot
+- Automatically run trim at startup
 - Optional cron-based scheduled execution
 - Automatically detects F2FS filesystem, exits if not detected
 - Mounts `/data` with `background_gc=on`
